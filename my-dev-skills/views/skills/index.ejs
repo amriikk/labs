@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&display=swap" rel="stylesheet">    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>My Dev Skills</title>
+</head>
+<body>
+    <body>
+        <h1>Developer Skills:</h1>
+        <ul>
+          <% skills.forEach(function(s, idx) { %>
+            <li>
+              <form action="/skills/<%= idx %>?_method=DELETE"
+                class="delete-form" method="POST">
+                <button type="submit">X</button>
+              </form>
+              <a href="/skills/<%= idx %>"><%= s.skill %></a>
+                - 
+              <%= s.acquired ? 'acquired' : 'not acquired' %>
+            </li>
+          <% }); %>
+        </ul>
+        <a href="/skills/new">Add Skill</a>
+      </body>
+</body>
+</html>
