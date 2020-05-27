@@ -1,0 +1,23 @@
+.starship-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+  }
+
+.StarshipPage a {
+    color: slategray;
+}
+  
+.starship {
+    background-color: cornflowerblue;
+    text-align: left;
+    padding: 20px;
+    width: 400px;
+    color: slateblue;
+}
+  
+.line {
+    display: flex;
+    margin-bottom: 20px;
+}

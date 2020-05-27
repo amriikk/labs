@@ -1,12 +1,9 @@
-const starShipEndpoint = 'https://swapi.dev/api/starships/';
+const STARSHIP_ENDPOINT = 'https://swapi.dev/api/starships/'
 
 function getAllStarships() {
-    console.log("Hello from getAllStarships!")
-    return fetch(starshipEndpoint)
-    .then(res => {
-        return res.json();
-    })
-    .then(json=>json.results)
+  return fetch(STARSHIP_ENDPOINT)
+    .then((res) => res.json())
+    .then((json) => json.results)
 }
 
 export default getAllStarships;
